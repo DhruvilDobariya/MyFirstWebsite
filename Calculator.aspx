@@ -5,12 +5,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Calculator</title>
-    <link rel="icon" type="image/x-icon" href="~/Content/assets/image/favicon.png">
-    <link href="~/Content/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="~/Content/fontawesome/css/all.min.css" />
-    <link href="~/Content/assets/css/style.css" rel="stylesheet"/>
-    <script src="/Content/bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script src="/Content/fontawesome/js/all.min.js" type="text/javascript"></script>
+    <link rel="icon" type="image/x-icon" href="~/Content/image/favicon.png">
+    <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="~/Content/css/all.min.css" />
+    <link href="~/Content/css/style.css" rel="stylesheet"/>
+    <script src="/Content/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+    <script src="/Content/js/all.min.js" type="text/javascript"></script>
 </head>
 <body>
     <form runat="server" id="form1">
