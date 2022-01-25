@@ -71,12 +71,12 @@
                     <div class="row">
                         <ul class="navbar-nav d-flex flex-row justify-content-end">
                             <li class="nav-item">
-                                <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="#" CssClass="nav-link text-secondary ms-4">
+                                <asp:HyperLink ID="hlHome" runat="server" NavigateUrl="~/DarshanWebsite/Home.aspx" CssClass="nav-link text-secondary ms-4">
             <i class="fas fa-home"></i>
                                 </asp:HyperLink>
                             </li>
                             <li class="nav-item">
-                                <asp:HyperLink ID="hlAbout" runat="server" NavigateUrl="#" CssClass="nav-link text-secondary ms-4">About</asp:HyperLink></li>
+                                <asp:HyperLink ID="hlAbout" runat="server" NavigateUrl="~/DarshanWebsite/About.aspx" CssClass="nav-link text-secondary ms-4">About</asp:HyperLink></li>
                             <li class="nav-item">
                                 <asp:HyperLink ID="hlContact" runat="server" NavigateUrl="#" CssClass="nav-link text-secondary ms-4">Contact</asp:HyperLink></li>
                             <li class="nav-item">
@@ -95,7 +95,7 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
+            <div class="row bg-danger">
                 <asp:ContentPlaceHolder ID="cphContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
