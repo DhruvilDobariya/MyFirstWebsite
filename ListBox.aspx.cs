@@ -63,7 +63,7 @@ public partial class ListBox : System.Web.UI.Page
                 {
                     foreach (ListItem li in lstb1.Items)
                     {
-                        if (txtCountry.Text.Trim() == li.Text.Trim() && txtCode.Text.Trim() == li.Value.Trim())
+                        if (txtCountry.Text.Trim().ToLower() == li.Text.Trim().ToLower() && txtCode.Text.Trim() == li.Value.Trim() || txtCountry.Text.Trim().ToLower() == li.Text.Trim().ToLower() || txtCode.Text.Trim() == li.Value.Trim())
                         {
                             flag = false;
                             break;
@@ -71,7 +71,7 @@ public partial class ListBox : System.Web.UI.Page
                     }
                     foreach (ListItem li in lstb2.Items)
                     {
-                        if (txtCountry.Text.Trim() == li.Text.Trim() && txtCode.Text.Trim() == li.Value.Trim())
+                        if (txtCountry.Text.Trim().ToLower() == li.Text.Trim().ToLower() && txtCode.Text.Trim() == li.Value.Trim() || txtCountry.Text.Trim().ToLower() == li.Text.Trim().ToLower() || txtCode.Text.Trim() == li.Value.Trim())
                         {
                             flag = false;
                             break;
@@ -340,7 +340,7 @@ public partial class ListBox : System.Web.UI.Page
                 bool flag2 = true;
                 foreach (ListItem li in lstb1.Items)
                 {
-                    if (txtUpdateCountry.Text.Trim() == li.Text.Trim() && txtUpdateCode.Text.Trim() == li.Value.Trim())
+                    if (txtUpdateCountry.Text.Trim().ToLower() == li.Text.Trim().ToLower() && txtUpdateCode.Text.Trim() == li.Value.Trim() || txtUpdateCountry.Text.Trim().ToLower() == li.Text.Trim().ToLower() || txtUpdateCode.Text.Trim() == li.Value.Trim())
                     {
                         flag2 = false;
                         break;
@@ -348,7 +348,8 @@ public partial class ListBox : System.Web.UI.Page
                 }
                 foreach (ListItem li in lstb2.Items)
                 {
-                    if (txtUpdateCountry.Text.Trim() == li.Text.Trim() && txtUpdateCode.Text.Trim() == li.Value.Trim())
+                    if (txtUpdateCountry.Text.Trim().ToLower() == li.Text.Trim().ToLower() && txtUpdateCode.Text.Trim() == li.Value.Trim()
+                        || txtUpdateCountry.Text.Trim().ToLower() == li.Text.Trim().ToLower() || txtUpdateCode.Text.Trim() == li.Value.Trim())
                     {
                         flag2 = false;
                         break;

@@ -165,7 +165,7 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="rfvMobileNo" runat="server" ControlToValidate="txtMobileNo" Display="Dynamic" ErrorMessage="Enter Mobile No" ForeColor="Red" ValidationGroup="Sign up"></asp:RequiredFieldValidator>
-                        <asp:RegularExpressionValidator ID="revMobileNo" runat="server" ControlToValidate="txtMobileNo" Display="Dynamic" ErrorMessage="Enter Valid Mobile No" ForeColor="Red" ValidationExpression="^([9]{1})([234789]{1})([0-9]{8})$" ValidationGroup="Sign up"></asp:RegularExpressionValidator>
+                        <asp:RegularExpressionValidator ID="revMobileNo" runat="server" ControlToValidate="txtMobileNo" Display="Dynamic" ErrorMessage="Enter Valid Mobile No" ForeColor="Red" ValidationExpression="^([1-9]{1})([234789]{1})([0-9]{8})$" ValidationGroup="Sign up"></asp:RegularExpressionValidator>
                     </td>
                 </tr>
                 <tr>

@@ -13,6 +13,7 @@ public partial class CheckboxAndRedio : System.Web.UI.Page
     }
     protected void rbDegree_CheckedChanged(object sender, EventArgs e)
     {
+        lblSubmit.Text = "";
         rbCE.Visible = true;
         rbCV.Visible = true;
         rbME.Visible = true;
@@ -24,6 +25,7 @@ public partial class CheckboxAndRedio : System.Web.UI.Page
     }
     protected void rbDiploma_CheckedChanged(object sender, EventArgs e)
     {
+        lblSubmit.Text = "";
         rbDCE.Visible = true;
         rbDCV.Visible = true;
         rbDME.Visible = true;
@@ -88,6 +90,7 @@ public partial class CheckboxAndRedio : System.Web.UI.Page
     }
     protected void chkDegree_CheckedChanged(object sender, EventArgs e)
     {
+        lblSubmitChk.Text = "";
         if (chkDegree.Checked && chkAll.Checked)
         {
             chkCE.Visible = true;
@@ -138,6 +141,7 @@ public partial class CheckboxAndRedio : System.Web.UI.Page
     }
     protected void chkDiploma_CheckedChanged(object sender, EventArgs e)
     {
+        lblSubmitChk.Text = "";
         if (chkDiploma.Checked && chkAll.Checked)
         {
             chkDCE.Visible = true;
@@ -188,6 +192,7 @@ public partial class CheckboxAndRedio : System.Web.UI.Page
     }
     protected void chkAll_CheckedChanged(object sender, EventArgs e)
     {
+        lblSubmitChk.Text = "";
         if (chkAll.Checked)
         {
             if (chkDegree.Checked && chkDiploma.Checked)
@@ -247,6 +252,7 @@ public partial class CheckboxAndRedio : System.Web.UI.Page
     }
     protected void chkSub_CheckedChanged(object sender, EventArgs e)
     {
+        lblSubmitChk.Text = "";
         var checkBox = new List<CheckBox>();
         if (chkDegree.Checked && chkDiploma.Checked)
         {

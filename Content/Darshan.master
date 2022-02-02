@@ -17,8 +17,8 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div class="container-fluid">
-            <div class="row navbar">
+        <div class="">
+            <div class="row navbar p-2 sticky-top bg-light ps-4">
                 <div class="col-md-3">
                     <asp:Image ID="imgLogo" runat="server" alt="Darshan Logo" src="/Content/image/DIET_Logo.svg" CssClass="img-fluid" />
                 </div>
@@ -95,11 +95,11 @@
                     </div>
                 </div>
             </div>
-            <div class="row bg-danger">
+            <div class="">
                 <asp:ContentPlaceHolder ID="cphContent" runat="server">
                 </asp:ContentPlaceHolder>
             </div>
-            <div class="row bg-dark pb-4">
+            <div class="row bg-dark pb-4 ps-5">
                 <div class="col-md-3">
                     <p class="fs-6 text-success my-4"><span class="border-bottom border-light pb-3">ABOUT US</span></p>
                     <p class="text-light">
@@ -173,7 +173,7 @@
                 </div>
             </div>
         </div>
-        <div class="row bg-dark text-light p-3">
+        <div class="row bg-dark text-light p-3 ps-5">
             <div class="col-md-8">
                 <span class="me-2">2020 © All Rights Reserved.</span>
                 <asp:HyperLink runat="server" ID="hlTermsAndConditions" NavigateUrl="#" CssClass="text-light">Terms & Conditions</asp:HyperLink>
